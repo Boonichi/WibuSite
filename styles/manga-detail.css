@@ -1,0 +1,218 @@
+@import "colors.css";
+.small-text {
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.hidden {
+    display: none;
+}
+.cover-bg {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    z-index: -1;
+}
+.cover-bg img{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    filter: blur(60px);
+}
+
+.detail {
+    min-height: 300px;
+    width: 100%;
+    margin-top: -300px;
+    z-index: 10;
+    position: relative;
+    background-color: var(--bg-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.detail-cover {
+    position: absolute;
+    left: 40px;
+    top: -50px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 220px;
+    height: 330px;
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.3);
+}
+.detail-cover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.detail-content {
+    padding: 30px 50px 0 280px;
+}
+.detail-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail-info__manga-title {
+    font-size: 1.5rem;
+}
+.detail-info__manga-status {
+    color: var(--active-color);
+    font-size: 0.8rem;
+    margin-left: 30px;
+}
+.detail-info__manga-author {
+    color: var(--text-gray);
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.detail-info__manga-author a {
+    color: #666;
+}
+.detail-info__rating {
+    display: flex;
+    align-items: center;
+}
+.detail-info__rating-stars {
+    margin-right: 20px;
+}
+.detail-info__rating-stars img {
+    margin-left: 5px;
+}
+.detail-info__rating-score {
+    font-size: 2.25rem;
+}
+.detail-tag {
+    margin-top: 20px;
+    font-size: 0.7rem;
+
+}
+.detail-tag a{
+    color: var(--text-black);
+    display: inline-block;
+    background-color: white;
+    border: 1px solid var(--text-gray);
+    padding: 4px;
+    border-radius: 5px;
+}
+.detail-desc {
+    margin-right: 250px;
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 0.9rem;
+    color: var(--text-black);
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.full-content {
+    -webkit-line-clamp: none;
+    display: block;
+}
+.read-more-btn {
+    color: #2893ff;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.detail-read-btn {
+    background-color: var(--active-color);
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 10px;
+    display: block;
+    color: white;
+
+}
+.main-container {
+    padding: 0 30px 0 40px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+main {
+    width: 800px;
+    display: inline-block;
+    vertical-align: top;
+}
+.chapter__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--text-gray);
+    padding-bottom: 10px;
+}
+.chapter__header-left {
+    font-weight: 600;
+    color: var(--active-color);
+    font-size: 1.2rem;
+}
+.chapter-count {
+    margin-left: 10px;
+}
+
+.chapter-sort {
+    margin-left: 10px;
+}
+.chapter__list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.chapter__list-item {
+    background-color: var(--light-gray);
+    width: 395px;
+    margin: 0 0 10px 0;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+.chapter-title {
+    color: var(--text-black);
+    margin-bottom: 8px;
+}
+.chapter__expand {
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.chapter__expand i {
+    margin-right: 10px;
+}
+aside {
+    width: 300px;
+    display: inline-block;
+    margin-left: 25px;
+}
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.list-header .more {
+    color: var(--active-color);
+    cursor: pointer;
+}
+.list-header .more:hover {
+    color: var(--hover-color);
+}
+.list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.list-item {
+    border-bottom: 1px solid var(--text-gray);
+    padding-bottom: 10px;
+    margin-top: 14px;
+}
+.list-item-title {
+    color: var(--text-black);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
