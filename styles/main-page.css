@@ -1,0 +1,92 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner-bar{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.banner-bar-container{
+    max-width: 1440px;
+    margin: 0;
+    height:100%;
+    z-index: 1
+}
+.banner-bar-container .swiper-container{
+    overflow: visible;
+}
+.swiper-container{
+    margin: 0 auto;
+    position: relative;
+    direction: ltr;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+.swiper-wrapper{
+    position: relative;
+    box-sizing: content-box;
+}
+.swiper-slide{
+    float: left;
+    box-sizing: content-box;
+}
+.swipe-button-prev{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    background-repeat: no-repeat;
+    background-image: url('/resources/images-home-page/banner/banner-left-arrow.png');
+    margin-left: -680px;
+    z-index: 5;
+}
+.swipe-button-next{ 
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    background-repeat: no-repeat;
+    margin-left: 580px;
+    background-image: url('/resources/images-home-page/banner/banner-right-arrow.png');
+    z-index: 5;
+}
+.main-menu{
+    background: #FFAE00;
+    border-radius: 6px;
+    height: 60px;
+    padding: 0 35px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+.main-menu a {
+    line-height: 60px;
+    margin: 0 15px;
+    font-size: 15px;
+    color: #500106;
+    letter-spacing: 0;
+}
+.main-menu a.main-menu-btn{
+    background: #FFFFFF;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #FFAE00;
+    letter-spacing: 0;
+    text-align: center;
+    height: 40px;
+    float: right;
+    display: block;
+    margin: 10px;
+    line-height: 40px;
+    width: 116px;
+}
